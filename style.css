@@ -378,11 +378,7 @@ body {
 }
 
 
-/* POPULAR CAR SECTION */
-.popular{
-    margin-top: 50px;
-    padding: 20px 5%;
-}
+
 
 
 .center{
@@ -396,6 +392,22 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
+
+.choose-right {
+    display: block;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.main-div{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+
 
 
 .car-card{
@@ -706,6 +718,7 @@ body {
     padding-top: 15px;
     border-top: 1px solid #0d3e55;
     font-size: 14px;
+
 }
    
 
@@ -716,6 +729,8 @@ body {
    MOBILE RESPONSIVE (max-width: 768px)
    ============================ */
 @media (max-width: 768px){
+
+
 
 
     /* GENERAL FIX */
@@ -865,13 +880,13 @@ body {
 
 
     .hero-text h1{
-        font-size: 28px;
+        font-size: 32px;
     }
 
 
     .store-buttons{
         flex-direction: column;
-        gap: 10px;
+        gap: 32px;
     }
 
 
@@ -886,12 +901,6 @@ body {
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
 
 .navbar{
@@ -1162,14 +1171,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .brand-logos{
     width: 100%;
     padding: 40px 0;
@@ -1199,19 +1200,8 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* WHY CHOOSE US SECTION */
+@media(max-width:768px){
 .why-choose{
     width: 100%;
     display: flex;
@@ -1219,6 +1209,9 @@ body {
     gap: 50px;
     align-items: center;
 }
+}
+
+
 
 
 .choose-left .hero-car{
@@ -1590,10 +1583,18 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-
+f
 
 .social i:hover{
     color: white;
+}
+
+@media(max-width:768px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
 
@@ -1610,170 +1611,60 @@ body {
 
 
 
-/* ============================
-   MOBILE RESPONSIVE (max-width: 768px)
-   ============================ */
-@media (max-width: 768px){
+/* ---------------------- */
+/* MOBILE RESPONSIVE CSS */
+/* ---------------------- */
 
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
 
-    /* GENERAL FIX */
-    body, html {
-        overflow-x: hidden;
-    }
-    * {
-        text-align: center !important;
-    }
+/* Hide nav on mobile */
+@media (max-width: 768px) {
 
-
-    /* NAVBAR */
-    .navbar{
-        justify-content: center;
-        padding: 15px 10px;
-    }
-    .logo{
-        margin: auto;
-    }
     .nav-links,
-    .nav-buttons{
+    .nav-buttons {
         display: none;
     }
 
-
-    /* HERO SECTION */
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        padding: 3rem 5%;
+    .burger {
+        display: block;
     }
 
+    .navbar {
+        padding: 15px 20px;
+    }
 
-    .hero-text{
+    /* Mobile menu open */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
         width: 100%;
-    }
-
-
-    .hero-image img{
-        width: 85%;
-        margin-top: 20px;
-    }
-
-
-    /* SEARCH BOX */
-    .search-box{
-        flex-direction: column;
+        padding: 20px 0;
+        background: white;
+        gap: 20px;
+        border-top: 1px solid #ddd;
+        z-index: 1000;
         text-align: center;
-        gap: 18px;
-        padding: 25px;
     }
 
-
-    .search-item{
+    #menu-toggle:checked ~ .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 260px;
+        left: 0;
         width: 100%;
-        justify-content: center;
-    }
-
-
-    .search-btn{
-        width: 100%;
-    }
-
-
-    /* STEPS SECTION */
-    .steps-container{
-        flex-direction: column;
-        width: 90%;
-    }
-    .step-box{
-        width: 100%;
-    }
-
-
-    /* BRANDS */
-    .brand-container{
-        flex-wrap: wrap;
-        justify-content: center;
+        background: white;
+        padding-bottom: 20px;
         text-align: center;
-    }
-
-
-    /* WHY CHOOSE US */
-    .why-choose{
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .choose-left img{
-        width: 85%;
-        margin: auto;
-    }
-
-
-    .feature{
-        justify-content: center;
-        text-align: center !important;
-    }
-
-
-    /* POPULAR CARS */
-    .car-grid{
-        grid-template-columns: 1fr;
-    }
-
-
-    /* REVIEWS */
-    .test-container{
-        grid-template-columns: 1fr;
-    }
-    .test-content{
-        text-align: center;
-    }
-
-
-    /* DOWNLOAD SECTION */
-    .download-section{
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .phone-img{
-        width: 70%;
-    }
-
-
-    /* FOOTER */
-    .footer-container{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-}
-
-
-/* ============================
-   SMALL MOBILE (max-width: 480px)
-   ============================ */
-@media (max-width: 480px){
-
-
-    .hero-text h1{
-        font-size: 28px;
-    }
-
-
-    .store-buttons{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-
-    .test-title{
-        font-size: 26px;
-    }
-
-
-    .footer-container{
-        grid-template-columns: 1fr;
+        border-bottom: 1px solid #ddd;
     }
 }
 

@@ -5,24 +5,35 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Rent a car</title>
  <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
  <!-- nav start -->
  <nav class="navbar">
- <div class="logo">
- <img src="./images/Frame 993.png" alt="Website Logo" height="30px">
- </div>
- <ul class="nav-links">
- <li><a href="#">Become a Renter</a></li>
- <li><a href="#">Rental Deals</a></li>
- <li><a href="#">How it Works</a></li>
- <li><a href="#">Why Choose Us</a></li>
- </ul>
- <div class="nav-buttons">
- <a href="#" class="btn sign-in">Sign In</a>
- <a href="#" class="btn sign-up">Sign Up</a>
- </div>
- </nav>
+
+    <div class="logo">
+        <img src="./images/Frame 993.png" height="30px">
+    </div>
+
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="menu-toggle" style="display:none;">
+
+    <!-- Burger icon -->
+    <label for="menu-toggle" class="burger"> &#9776;</label>
+
+    <ul class="nav-links">
+        <li><a href="#">Become a Renter</a></li>
+        <li><a href="#">Rental Deals</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Why Choose Us</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+        <a href="#" class="btn sign-in">Login In</a>
+        <a href="#" class="btn sign-up">Sign Up</a>
+    </div>
+
+</nav>
  <!-- nav end -->
  <!-- main body start -->
  <section class="hero">
@@ -90,23 +101,25 @@
 <section class="brand-logos">
  <div class="brand-container">
  <img src="./images/Frame.png" alt="Honda" >
- <img src="./images/Group (2).png" alt="Jaguar" 
+ <img src="./images/Group (2).png" alt="Jaguar">
  <img src="./images/Global_x2F_Logos_x2F_Logo-White-115x116.png" alt="Nissan" >
  <img src="./images/Volvo Cars svg.png" alt="Volvo">
  <img src="./images/Frame 27 (1).png" alt="Acura">
  <img src="./images/Frame 28 (1).png" alt="Acura">
  </div>
 </section>
+<div class="main-div" >
 <!-- brands logo end -->
-  <div>
+  <div class="silver-car">
 
-  <img src="./images/Audi 1 (2).png" alt="Logo" height="300px" class="me-2">
+  <img  src="./images/Audi 1 (2).png" alt="Logo" height="300px" class="me-2">
   </div>
 <!-- car details -->
 <section class="why-choose">
  <div class="choose-left">
- <img src="/im" class="hero-car" alt="">
+ 
  </div>
+ 
  <div class="choose-right">
  <h4 class="tag">WHY CHOOSE US</h4>
  <h2 class="title">We offer the best experience <br> with our rental deals</h2>
@@ -140,6 +153,7 @@
  </div>
  </div>
  </section>
+ </div>
  <!-- car details -->
  <!-- Popular Cars Section -->
  <section class="popular">
@@ -159,7 +173,7 @@
  <button class="rent-btn">Rent Now</button>
  </div>
  <div class="car-card">
- <img src="./images/Audi 1 (1) (1).png"">
+ <img src="./images/Audi 1 (1) (1).png">
  <h3>Audi R8</h3>
  <p class="rating"><i class="ri-star-fill"></i> 4.6 (3.8k reviews)</p>
  <div class="car-info">
@@ -239,6 +253,7 @@
 </section>
  <!-- reveiws scetion start -->
 <!-- download section start -->
+ <div>
  <section class="download-section">
  <div class="download-left">
  <button class="download-btn">DOWNLOAD</button>
@@ -250,9 +265,15 @@
  </div>
  </div>
  <div class="download-right">
+  <div>
  <img src="zxc.png" class="phone-img" alt="">
  </div>
+ <div>
+   <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="logo" height="400">
+ </div>
+ </div>
 </section>
+</div>
 <!-- download section start -->
 <!-- FOOTER -->
 <footer class="footer">
